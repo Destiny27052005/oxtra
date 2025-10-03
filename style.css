@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+section,
+footer {
+    padding: 0 1rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+/* header */
+
+header {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.transparent {
+    backdrop-filter: blur(10px);
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+
+
+.nav_list a {
+    color: white;
+}
+
+#sign_up {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #14141d;
+}
+
+/* first section */
+
+.sect {
+    height: 100vh;
+    padding-top: 6rem;
+    background-image: url(joey-banks-YApiWyp0lqo-unsplash2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ls-form .greyed {
+    color: grey;
+    text-decoration: underline;
+}
+
+.sect h1 {
+    font-weight: 750;
+    line-height: 27px;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    z-index: 100;
+}
+
+.show {
+    display: block;
+}
+
+.sect p {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.ls-form {
+    background-color: #eeeded;
+    height: 60%;
+    z-index: 100;
+    padding: 25px 15px;
+    border-radius: 15px;
+}
+
+.company_logos {
+    display: flex;
+    justify-content: center;
+}
+
+.company_logos img {
+    width: 100px;
+}
+
+.ls-form ul {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+
+}
+
+.pick_up,
+.drop_off {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 9px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.ls-form .input {
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+label input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 5px 8px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.sect button {
+    display: flex;
+    justify-self: center;
+    color: #ffff;
+    background-color: #110d47;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 4px 5px rgba(111, 111, 111, 0.5);
+    transition: all 0.5s;
+}
+
+.sect button:hover {
+    transform: translateY(-5px);
+}
+
+/* second section */
+
+.services {
+    background-color: #110d47;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.services h2 {
+    color: #ffff;
+}
+
+.services .cell {
+    background-color: #ffff;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.cell h3 {
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.cell p {
+    line-height: 25px;
+}
+
+/* third section */
+
+.choose {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.choose h2 {
+    margin-bottom: 15px;
+}
+
+.cells {
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(111, 111, 111, 0.5);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.cells h3 {
+    margin-bottom: 10px;
+}
+
+.cells p {
+    line-height: 25px;
+}
+
+.cell_1 {
+    background-color: #e4ebfa;
+}
+
+.cell_2 {
+    background-color: #e3e3e3;
+}
+
+.cell_3 {
+    background-color: #fdf3e1;
+}
+
+.choose h2 {
+    margin-top: 3rem;
+}
+
+.grey {
+    font-size: 15px;
+    color: #595858;
+    margin-bottom: 3rem;
+}
+
+/* fourth section */
+.business {
+    background-color: #14141d;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #ffff;
+}
+
+.business h4 {
+    width: 65%;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.business img {
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.business .bd-grid {
+    margin-top: 25px;
+}
+
+.business .cell {
+    background-color: #4f5a53;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* fifth section */
+.agff {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.agff h1 {
+    text-transform: capitalize;
+}
+
+.agff h1,
+.agff h3,
+.agff p {
+    margin-bottom: 1.2rem;
+}
+
+.agff p {
+    line-height: 30px;
+}
+
+.agff img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.agff button {
+    background-color: #110d47;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* sixth section */
+
+.faq {
+    background-color: #eff0ef;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.faq h1 {
+    margin-bottom: 0.5rem;
+}
+
+.faq p {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.faq button {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(32, 17, 245, 0.5);
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.faq button:hover {
+    transform: translateY(-5px);
+}
+
+.ques {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(133, 132, 132, 0.5);
+    border-radius: 10px;
+    padding: 5px 9px;
+    margin-bottom: 0.5rem;
+}
+
+.right {
+    border: 1px solid #110d47;
+    border-radius: 10px;
+    padding: 20px 15px 25px 15px;
+}
+
+.right .fa-comments {
+    color: #110d47;
+    font-size: 80px;
+    margin-bottom: 2rem;
+}
+
+.right h3 {
+    margin-bottom: 15px;
+}
+
+.right p {
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.btn {
+    background-color: #110d47;
+    color: #fff;
+}
+
+/* last section */
+
+.reviews {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.reviews .title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.reviews .subtitle {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.reviews .cell {
+    border: 1px solid #4f5a53;
+    padding: 25px 15px;
+    border-radius: 15px;
+}
+
+.reviews .bd-grid {
+    margin-bottom: 2rem
+}
+
+.buttom {
+    background-color: #110d47;
+    color: #fff;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.buttom button {
+    padding: 10px 8px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+}
+
+.buttom button:last-of-type {
+    background-color: #fff;
+    color: black;
+}
+
+.buttom h1 {
+    margin-bottom: 15px;
+}
+
+/* footer */
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer ul {
+    margin-top: 15px;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer h1 {
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .bd-grid {
+    margin-bottom: 1.5rem;
+}
+
+footer input,
+footer button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #595858;
+}
+
+footer input {
+    margin-bottom: 5px;
+}
+
+footer button {
+    color: #fff;
+    background-color: #110d47;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav_list {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        padding-left: 1rem;
+        background: rgba(111, 111, 111, 0.518);
+        z-index: 1000;
+    }
+
+
+
+    .nav_list li:first-of-type {
+        margin-top: 0.5rem;
+    }
+
+    .nav_list li {
+        margin-bottom: 0.5rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .sect {
+        background-image: url(campbell-3ZUsNJhi_Ik-unsplash.jpg);
+        position: relative;
+    }
+
+    .sect .center {
+        position: absolute;
+        padding-right: 0.5rem;
+        bottom: 40%;
+        transform: translateY(-20%);
+        margin-bottom: 1rem;
+    }
+
+    .sect form {
+        height: fit-content;
+        width: 80%;
+        position: absolute;
+        bottom: 4%;
+        left: 50%;
+        padding: 2rem 1rem;
+        transform: translateX(-50%);
+    }
+
+    .business {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .business .cell {
+        margin-bottom: 25px;
+    }
+
+    .agff img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 15px;
+    }
+
+    .faq h1 {
+        font-size: 25px;
+    }
+
+    .faq button {
+        font-size: 10px;
+    }
+
+    .ques h3 {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .ques i {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .right {
+        margin-top: 2rem;
+    }
+
+    .right .btn {
+        font-size: 15px;
+        border: none;
+        padding: 10px;
+    }
+
+    .reviews .title {
+        font-size: 20px;
+    }
+
+    .reviews .subtitle {
+        font-size: 12px;
+    }
+
+    .reviews .cell {
+        margin-bottom: 1.5rem;
+    }
+
+    .reviews .cell p {
+        line-height: 25px;
+        margin-bottom: 1.5rem;
+    }
+
+    .buttom img {
+        width: 90%;
+    }
+
+    .mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2rem;
+        row-gap: 15px;
+    }
+
+    footer p,
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    footer form {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding-right: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav_list {
+        margin-left: 2rem;
+    }
+
+    .sect {
+        display: grid;
+        grid-template-columns: 0.9fr 1fr;
+        align-items: center;
+        gap: 15px;
+        padding-top: 15%;
+    }
+
+    .sect form {
+        height: fit-content;
+        position: relative;
+    }
+
+    .sect form input {
+        font-size: 1.5rem;
+    }
+
+    .pick_up,
+    .drop_off {
+        margin-top: 2rem;
+    }
+
+    .sect form button {
+        font-size: 1.5rem;
+        margin-top: 15%;
+    }
+
+    .services {
+        height: fit-content;
+    }
+
+    .services h2 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .services h3 {
+        font-size: 2rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+
+    .services .bd-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        margin-top: 3rem;
+    }
+
+    .cell {
+        margin: 0;
+    }
+
+    .choose .bd-grid {
+        display: flex;
+        gap: 20px
+    }
+
+    .choose {
+        height: 60vh;
+    }
+
+    .business {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        gap: 3rem;
+    }
+
+    .business img {
+        margin-top: 25%;
+        height: 80%;
+    }
+
+    .business .bd-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .agff {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        gap: 15px;
+    }
+
+    .agff img {
+        height: 100%;
+    }
+
+    .grouped {
+        display: grid;
+        grid-template-columns: 1fr 0.7fr;
+        gap: 20px;
+    }
+
+    .ques:first-of-type {
+        margin-top: 1rem;
+    }
+
+    .ques {
+        margin-bottom: 2rem;
+    }
+
+    .reviews .bd-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .buttom {
+        height: 400px;
+    }
+
+    .buttom img {
+        width: 40%;
+        position: absolute;
+        left: -22px;
+        bottom: 1%;
+    }
+
+    .dsf {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .move {
+        position: absolute;
+        bottom: 20%;
+        left: 40%;
+    }
+
+    footer .bd-grid {
+        display: flex;
+    }
+
+    .mobile {
+        display: flex;
+        gap: 10px;
+        margin-top: 2rem;
+    }
+
+    .end {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 2.5rem 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav_list {
+        margin-left: 2rem;
+    }
+
+    .sect {
+        display: grid;
+        grid-template-columns: 0.9fr 1fr;
+        gap: 20px;
+    }
+
+    .sect form {
+        height: fit-content;
+    }
+
+    .services {
+        height: fit-content;
+    }
+
+    .services .bd-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+    .services p {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .cell {
+        margin: 0;
+    }
+
+    .choose .bd-grid {
+        display: flex;
+        gap: 20px
+    }
+
+    .choose {
+        height: 100vh;
+    }
+
+    .business {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 15px;
+    }
+
+    .business .bd-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 2rem;
+    }
+
+    .business img {
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .oxtra_business h4 {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+
+    .oxtra_business h2 {
+        margin-bottom: 1rem;
+    }
+
+    .oxtra_business p {
+        line-height: 2;
+    }
+
+    .agff {
+        height: fit-content;
+        gap: 2rem;
+    }
+
+    .agff img {
+        height: 100%;
+    }
+
+    .grouped {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        gap: 20px;
+    }
+
+    .reviews .bd-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .buttom {
+        height: 400px;
+    }
+
+    .buttom img {
+        width: 40%;
+        position: absolute;
+        left: -22px;
+        bottom: 1%;
+    }
+
+    .dsf {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .move {
+        position: absolute;
+        bottom: 20%;
+        left: 40%;
+    }
+
+    footer .bd-grid {
+        display: flex;
+    }
+
+    .mobile {
+        display: flex;
+        margin-top: 2rem;
+        gap: 10px;
+    }
+
+    .end {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    footer form {
+        transform: translateX(-80%);
+    }
+
+    .social {
+        margin-right: 2rem;
+    }
+}
